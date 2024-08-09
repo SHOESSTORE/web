@@ -1,0 +1,206 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+:focus {
+  outline: 0;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+header{
+    width: 100%;
+    height: 90px;
+    float: left;
+}
+nav{
+    width: 100%;
+    height: 50px;
+}
+section{
+    width: 49.8%;
+    height: 900px;
+    float: left;
+}
+aside{
+    width: 49.8% ;
+    height: 908px; ;
+    float: right;
+    background-image: url(imagenes/tabas3.jpg);
+}
+footer{
+    width: 100%;
+    height: 250px;
+    float: left;
+}
+/* navegacion */
+.navbar{
+    padding: 2rem;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.compra{
+    float: right;
+    background-color: orangered;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: orangered !important;
+}
+.navbar-nav .nav-link:hover{
+    color: orangered !important;
+    border-style: solid;
+    border-color: orangered;
+    border-width: 4px;
+    border-radius: 25px;
+}
+.compra .btn:hover{
+    background-color: rgb(223, 66, 9);
+}
+/* desktop */
+@media (min-width: 0px) and  (max-width: 991px) { 
+    .list1{
+        display: none;
+    }
+}
+@media (min-width: 0px) and  (max-width: 575px) { 
+    .list1{
+        display: grid;
+    }
+}
+/* tablet */
+.lista-tablet{
+    margin-left: 150px;
+}
+/* seccion */
+.bot{
+    background-image: url(imagenes/tabas2.jpg);
+    width: 100%;
+    text-align: right;
+    padding-top: 200px;
+    padding-right: 80px;
+    float: left;
+    display: grid;
+    padding-inline-start: 400px;
+    padding-bottom: 400px;
+}
+.uno{
+    margin-bottom: 100px;
+    background-color: orangered;
+    text-align: left;
+    border: none;
+}
+.dos{
+    background-color: orangered;
+    text-align: left;
+    border: none;
+}
+.tres{
+    float: right;
+}
+.cuatro{
+    float: right;
+}
+.bot .uno:hover{
+    background-color: gray;
+}
+.bot .dos:hover{
+    background-color: gray;
+}
+.cinco{
+    margin-right: 12px;
+}
+.seis{
+    margin-left: 4px;
+}
+/* seccion tablet */
+.ima-tablet{
+    margin-left: -280px;
+    margin-top: 45px;
+}
+.tabimg{
+    margin-top: 45px;
+}
+.uno-tablet{
+    margin-top: 160px;
+    margin-left: -210px;
+    background-color: orangered;
+    text-align: left;
+    border: none;
+}
+.dos-tablet{
+    margin-left: 140px;
+    background-color: orangered;
+    text-align: left;
+    border: none;
+}
+.uno-tablet:hover{
+    background-color: gray;
+}
+.dos-tablet:hover{
+    background-color: gray;
+}
+/* lista */
+ul{
+    list-style-type: none; 
+    text-align: left;
+    display: flex;
+}
+.lista ul li{
+    margin: 2px; 
+    padding: 0; 
+}
+ul li a{
+    display: block;
+    width: 100px; 
+    padding: 4px 0;
+    text-decoration: none; 
+    text-align: center;
+    font-size: 11px;
+    color: rgb(0, 0, 0);
+}
+.lista ul li a:hover{
+    color: orangered !important;
+}
+.im1{
+    margin-top: 166px;
+    margin-left: -41%;
+}
+.redes ul li a{
+    width: 50px; 
+}

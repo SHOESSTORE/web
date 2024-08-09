@@ -1,0 +1,133 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+:focus {
+  outline: 0;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ESTRUCTURA */
+header{
+    width: 100%;
+    float: left;
+}
+nav{
+    width: 100%;
+    height: 90px;
+}
+footer{
+    width: 100%;
+    float: left;
+}
+/* NAVEGACION */
+.navbar{
+    padding: 2rem;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.compra{
+    float: right;
+    background-color: orangered;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: orangered !important;
+}
+.navbar-nav .nav-link:hover{
+    color: orangered !important;
+    border-style: solid;
+    border-color: orangered;
+    border-width: 4px;
+    border-radius: 25px;
+}
+.compra .btn:hover{
+    background-color: rgb(223, 66, 9);
+}
+/* DESKTOP */
+@media (min-width: 0px) and  (max-width: 991px) { 
+    .list1{
+        display: none;
+    }
+}
+@media (min-width: 0px) and  (max-width: 575px) { 
+    .list1{
+        display: grid;
+    }
+}
+/* TABLET */
+.lista-tablet{
+    margin-left: 150px;
+}
+/* LISTAS */
+ul{
+    list-style-type: none; 
+    text-align: left;
+    display: flex;
+}
+.lista ul li{
+    margin: 2px; 
+    padding: 0; 
+}
+ul li a{
+    display: block;
+    width: 100px; 
+    padding: 4px 0;
+    text-decoration: none; 
+    text-align: center;
+    font-size: 11px;
+    color: rgb(0, 0, 0);
+}
+.lista ul li a:hover{
+    color: orangered !important;
+}
+ .redes ul li a{
+    width: 50px; 
+ }
+ /* CONTENIDO */
+ .container {
+    margin-top: 50px;
+}
+
+.card {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
