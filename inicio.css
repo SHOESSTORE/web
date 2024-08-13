@@ -42,17 +42,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-section{
-    width: 49.8%;
-    height: 900px;
-    float: left;
-}
-aside{
-    width: 49.8% ;
-    height: 908px; ;
-    float: right;
-    background-image: url(imagenes/tabas3.jpg);
-}
 footer{
     width: 100%;
     height: 250px;
@@ -68,7 +57,7 @@ footer{
 }
 .compra{
     float: right;
-    background-color: orangered;
+    background-color: orangered !important;
 }
  .navbar .navbar-nav .nav-link:hover{
     color: orangered !important;
@@ -80,7 +69,10 @@ footer{
     border-width: 4px;
     border-radius: 25px;
 }
-.compra .btn:hover{
+.btn1{
+    background-color: orangered;
+}
+.compra .btn1:hover{
     background-color: rgb(223, 66, 9);
 }
 /* DESKTOP */
@@ -88,108 +80,52 @@ footer{
     .list1{
         display: none;
     }
- }
- @media (min-width: 0px) and  (max-width: 575px) { 
+  }
+  @media (min-width: 0px) and  (max-width: 575px) { 
     .list1{
         display: grid;
     }
- }
- /* TABLET */
+  }
 .lista-tablet{
     margin-left: 150px;
 }
+.con{
+    background-color: orangered;
+}
 /* seccion */
-.bot{
-    background-image: url(imagenes/tabas2.jpg);
+.imagen {
     width: 100%;
-    text-align: right;
-    padding-top: 200px;
-    padding-right: 80px;
-    float: left;
-    display: grid;
-    padding-inline-start: 400px;
-    padding-bottom: 400px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 10px;
 }
-.uno{
-    margin-bottom: 100px;
-    background-color: orangered;
-    text-align: left;
-    border: none;
+.btn{
+    background-color: orangered !important;
+    margin-top: -1200px;
+    margin-left: 80px;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    text-decoration: none;
 }
-.dos{
-    background-color: orangered;
-    text-align: left;
-    border: none;
+.btn:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.1); 
+    transition: all 0.3s ease-in-out; 
 }
-.tres{
-    float: right;
-}
-.cuatro{
-    float: right;
-}
-.bot .uno:hover{
-    background-color: gray;
-}
-.bot .dos:hover{
-    background-color: gray;
-}
-.cinco{
-    margin-right: 12px;
-}
-.seis{
-    margin-left: 4px;
-}
-/* seccion tablet */
-.ima-tablet{
-    margin-left: -280px;
-    margin-top: 45px;
-}
-.tabimg{
-    margin-top: 45px;
-}
-.uno-tablet{
-    margin-top: 160px;
-    margin-left: -210px;
-    background-color: orangered;
-    text-align: left;
-    border: none;
-}
-.dos-tablet{
-    margin-left: 140px;
-    background-color: orangered;
-    text-align: left;
-    border: none;
-}
-.uno-tablet:hover{
-    background-color: gray;
-}
-.dos-tablet:hover{
-    background-color: gray;
-}
-/* seccion mobile */
-/* Estilos para la columna de imágenes */
-.img-column {
-    margin: 20px;
-  }
-  
-  /* Estilos para las imágenes */
-  .img-responsive {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  /* Media query para pantalla pequeña (mobile) */
-  @media only screen and (max-width: 768px) {
-    .img-column {
-      margin: 10px;
+/* Media queries para adaptar a diferentes dispositivos */
+@media (max-width: 768px) {
+    .imagen {
+        height: 700px;
     }
-    .img-responsive {
-      width: 50%;
-      height: auto;
-      margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+    .imagen {
+        height: 700px;
     }
-  }
+}
 /* lista */
 ul{
     list-style-type: none; 
@@ -211,10 +147,6 @@ ul li a{
 }
 .lista ul li a:hover{
     color: orangered !important;
-}
-.im1{
-    margin-top: 166px;
-    margin-left: -41%;
 }
 .redes ul li a{
     width: 50px; 
